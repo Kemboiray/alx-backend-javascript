@@ -10,7 +10,7 @@ This project is a series of tasks re:
   * How to use an ```async``` function
 
 Requirement:
-  * To be executed on [Ubuntu 18.04 LTS](https://releases.ubuntu.com/18.04/ 'Ubuntu 18.04 LTS release') using [Node.js 12.11.x](https://lodejs.org/en/download/current/ 'Download the Node.js 12.11.1')
+  * To be executed on [Ubuntu 18.04 LTS](https://releases.ubuntu.com/18.04/ 'Ubuntu 18.04 LTS release') using [Node.js 12.11.x](https://lodejs.org/en/download/current/ 'Download Node.js 12.11.1')
 
                 _  __              _           _
                | |/ /___ _ __ ___ | |__   ___ (_)_ __ __ _ _   _
