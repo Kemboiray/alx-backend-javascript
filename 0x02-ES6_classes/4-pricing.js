@@ -1,14 +1,16 @@
-// This file implements a class, `Pricing`, which models
-// the pricing of items. It has the following properties:
-// - Constructor: parameters `amount` (Number) and `currency`
-//   (Currency) stored in properties of the same name with a leading
-//   underscore.
-// - A getter and setter for each property.
-// - A method `displayFullPrice` that returns attributes in
-//   the format `amount currency_name (currency_code)`.
-// - A static method `convertPrice` that accepts two arguments,
-//   `amount` (Number), `conversionRate` (Number) and returns
-//   the converted price (Number).
+/*
+  This file implements a class, `Pricing`, which models
+  the pricing of items. It has the following properties:
+  - Constructor: parameters `amount` (Number) and `currency`
+    (Currency) stored in properties of the same name with a leading
+    underscore.
+  - A getter and setter for each property.
+  - A method `displayFullPrice` that returns attributes in
+    the format `amount currency_name (currency_code)`.
+  - A static method `convertPrice` that accepts two arguments,
+    `amount` (Number), `conversionRate` (Number) and returns
+    the converted price (Number).
+*/
 
 import Currency from './3-currency';
 
