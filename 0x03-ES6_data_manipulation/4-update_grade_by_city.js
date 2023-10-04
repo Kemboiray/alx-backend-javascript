@@ -8,7 +8,7 @@
 export default function updateStudentGradeByCity(students, city, newGrades) {
   const studentsByCity = students.filter((student) => student.location === city);
   const studentsWithGrades = studentsByCity.map((student) => {
-    const grade = newGrades.filter((newGrade) => newGrade.id === student.id);
+    const grade = newGrades.filter((newGrade) => newGrade.studentId === student.id);
     if (grade[0]) {
       return { ...student, grade: grade[0].grade };
     }
