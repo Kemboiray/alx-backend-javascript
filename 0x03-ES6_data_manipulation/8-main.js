@@ -11,5 +11,9 @@ console.log(cleanSet(new Set(['apple', 'banana', 'cherry', 'date']), 'b'));
 console.log(cleanSet(new Set(['apple', 'banana', 'cherry', 'date']), 'c'));
 console.log(cleanSet(new Set(['apple', 'banana', 'cherry', 'date']), 'd'));
 console.log(cleanSet(new Set(['apple', 'banana', 'cherry', 'date']), ''));
-console.log(cleanSet(new Set(['apple', 'banana', 'cherry', 'date']), null));
-console.log(cleanSet(new Set(['apple', undefined, null, 123]), ''));
+try {
+  console.log(cleanSet(new Set(['apple', 'banana', 'cherry', 'date']), null));
+  console.log(cleanSet(new Set(['apple', undefined, null, 123]), ''));
+} catch (err) {
+  console.error(err);
+}
