@@ -3,6 +3,7 @@
  * The return value is a '-' separated list of matches
  */
 export default function cleanSet(set, startString) {
+  if (startString.length === 0) return '';
   const matches = Array.from(set).filter((item) => item.startsWith(startString));
   return matches.map((item) => item.slice(startString.length)).join('-');
 }
