@@ -8,3 +8,14 @@
  *
  * ****************************************************************************
  */
+export const weakMap = new WeakMap();
+
+export function queryAPI(endpoint) {
+  if (weakMap.has(endpoint)) {
+    const before = weakMap.get(endpoint);
+    weakMap.set(endpoint, before + 1);
+    if (before >= 4) throw TypeError('Endpoint load is high');
+  } else {
+    weakMap.set(endpoint, 1);
+  }
+}
