@@ -17,7 +17,7 @@ function typeCheck(set, startString) {
   if (typeof startString !== 'string') throw TypeError('startString must be a string');
 }
 
-export default function cleanSet(set, startString = '') {
+export default function cleanSet(set = new Set(), startString = '') {
   typeCheck(set, startString);
   if (startString) {
     const matches = Array.from(set).filter((item) => item.startsWith(startString));
