@@ -1,5 +1,6 @@
 /**
- * `createInt8TypedArray` - return a new `ArrayBuffer` with an `Int8 `value at a specific position
+ * `createInt8TypedArray` - return a new `ArrayBuffer` with an `Int8` value at
+ * a specific position
  * Args: `length` (Number), `position` (Number) and `value` (Number)
  * Throws: `Position outside range` if adding the value is not possible.
  */
