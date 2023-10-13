@@ -1,4 +1,4 @@
-import { Student } from '../../task_0/js/main'
+// import { Student } from '../../task_0/js/main'
 
 export interface Teacher {
   firstName: string;
@@ -18,17 +18,29 @@ export interface PrintTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-export const printTeacher: PrintTeacherFunction = (firstName: string, lastName: string): string => {
+export const printTeacher: PrintTeacherFunction = (firstName, lastName) => {
   return `${firstName.charAt(0)}. ${lastName}`;
 }
 
-export interface StudentConstructor {
-  new (firstName: string, lastName: string): Student;
+export interface StudentClassInterface {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+  new (firstName: string, lastName: string): StudentClass;
 }
 
-export class StudentClass {
-  constructor(firstName: string, lastName: string) {
+export class StudentClass implements StudentClassInterface {
+  constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
+  }
+
+  workOnHomework() {
+    return 'Currently working';
+  }
+
+  displayName() {
+    return this.firstName;
   }
 }
