@@ -1,0 +1,28 @@
+{
+  "name": "unittests",
+  "description": "Unit testing in JavaScript",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemboiray/alx-backend-javascript.git"
+  },
+  "keywords": [
+    "UnitTests",
+    "ES6",
+    "JavaScript",
+    "Mocha",
+    "NodeJS",
+    "ExpressJs"
+  ],
+  "author": "Kemboiray",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Kemboiray/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/Kemboiray/alx-backend-javascript#readme",
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
+}
