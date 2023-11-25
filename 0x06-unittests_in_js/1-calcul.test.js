@@ -34,4 +34,7 @@ describe('calculateNumber', () => {
   it('should return 0.5 when dividing 1.5 and 3.7', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 1.5, 3.7), 0.5);
   });
+  it('should return `Error` when dividing 1.5 and 0', () => {
+    assert.strictEqual(calculateNumber('DIVIDE', 1.5, 0), 'Error');
+  });
 })
