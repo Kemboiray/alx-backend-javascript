@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Kemboiray/alx-backend-javascript#readme",
   "dependencies": {
+    "chai": "^4.3.10",
     "mocha": "^10.2.0"
   }
 }
