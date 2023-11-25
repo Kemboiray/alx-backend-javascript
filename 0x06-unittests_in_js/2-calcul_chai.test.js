@@ -2,7 +2,7 @@
 // The `expect` syntax is more readable and more expressive than `assert`
 
 const expect = require("chai").expect;
-const calculateNumber = require("./2-calcul");
+const calculateNumber = require("./2-calcul_chai");
 
 describe("calculateNumber", () => {
   it("returns rounded sum with SUM_METHOD", () => {
